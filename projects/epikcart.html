@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ejike Okoye">
+  <meta name="description" content="Epikcart — React, Redux, React i18n. A project by Ejike Okoye.">
+  <title>Epikcart | Ejike Okoye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">Ejike<span>.</span></a>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <a href="../index.html#home">Home</a>
+        <a href="../index.html#about">About Me</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" aria-label="Mobile navigation">
+    <div class="nav-overlay"></div>
+    <div class="nav-panel">
+      <a href="../index.html#home">Home</a>
+      <a href="../index.html#about">About Me</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="project-hero">
+      <div class="container">
+        <a href="../index.html#projects" class="back-link">← Back to projects</a>
+        <h1>Epikcart</h1>
+        <div class="project-meta">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Redux</span>
+          <span class="project-tag">RTK Query</span>
+          <span class="project-tag">React i18n</span>
+        </div>
+        <div class="project-body">
+          <p>
+            A full-featured e-commerce frontend with dynamic product filtering,
+            multi-language support, and admin-configurable search parameters.
+          </p>
+          <div class="project-image">Project screenshot placeholder</div>
+          <h2>Key contributions</h2>
+          <ul>
+            <li>Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS</li>
+            <li>Developed dynamic filtering logic for the product search page with admin-configurable parameters</li>
+            <li>Implemented multi-language support with React i18n to cater to diverse audiences</li>
+            <li>Enhanced user interaction with animations and transitions using Framer Motion</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Design &amp; built by Ejike Okoye &copy; <span id="year"></span></p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
