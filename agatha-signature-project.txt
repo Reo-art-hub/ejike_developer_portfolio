@@ -1,0 +1,7 @@
+Agatha Signature Project
+========================
+
+This project contains the Agatha signature components and functionality.
+
+Created: 2026-06-25
+Project ID: dAi3F4B4jmZ4U2hGrYiv
