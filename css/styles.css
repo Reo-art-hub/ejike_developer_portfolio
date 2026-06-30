@@ -261,12 +261,12 @@ ul {
 }
 
 .hero h1 {
-  font-family: "Syne", sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 700;
-  line-height: 1.05;
+  font-weight: 600;
+  line-height: 1.2;
   margin: 0 0 1.5rem;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .hero h1 .highlight {

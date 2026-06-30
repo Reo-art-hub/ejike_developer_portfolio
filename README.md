@@ -1,8 +1,8 @@
-# Ejike Okoye — Developer Portfolio
+# Ejikeme Okoye — Developer Portfolio
 
 Personal portfolio website built with **HTML5**, **CSS3**, and **vanilla JavaScript**.
 
-**Author:** Ejike Okoye
+**Author:** Ejikeme Okoye
 
 **Live site:** [ejike-art.github.io/ejike_developer_portfolio](https://ejike-art.github.io/ejike_developer_portfolio/)
 
@@ -73,4 +73,4 @@ Run **Tasks: Run Task → Start Dev Server** to launch the site without typing c
 
 ## License
 
-© Ejike Okoye. All rights reserved.
+© Ejikeme Okoye. All rights reserved.
