@@ -1,0 +1,7 @@
+Sample One Project
+==================
+
+This is the first sample project placeholder.
+
+Created: 2026-06-25
+Purpose: Sample project demonstration
