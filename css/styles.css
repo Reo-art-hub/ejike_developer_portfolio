@@ -311,6 +311,18 @@ ul {
   transform: translateY(-2px);
 }
 
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 .hero-status {
   font-size: 0.85rem;
   color: var(--text-muted);
@@ -534,6 +546,13 @@ ul {
   gap: 0.6rem;
 }
 
+.project-card .project-btn {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.85rem;
+}
+
 /* Contact */
 .contact-section {
   text-align: center;
@@ -560,6 +579,20 @@ ul {
 
 .contact-email:hover {
   color: var(--accent-hover);
+}
+
+.contact-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
+.contact-github:hover {
+  color: var(--accent);
 }
 
 /* Footer */
