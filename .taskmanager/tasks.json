@@ -48,7 +48,18 @@
       "operationalPhase": "COMPLETE",
       "createdAt": "2026-08-22T14:50:59.000Z",
       "updatedAt": "2026-08-22T14:51:30.000Z"
+    },
+    {
+      "id": "task-1787412200503",
+      "projectId": "bnOpXbmW0eQww79zKAOu",
+      "title": "Update README with portfolio documentation",
+      "description": "Replace root README.md with structured portfolio documentation: projects overview, core tech stack, and live/GitHub/LinkedIn links.",
+      "status": "done",
+      "priority": "medium",
+      "operationalPhase": "COMPLETE",
+      "createdAt": "2026-08-22T15:23:20.000Z",
+      "updatedAt": "2026-08-22T15:23:30.000Z"
     }
   ],
-  "lastSync": "2026-08-22T14:51:35.349Z"
+  "lastSync": "2026-08-22T15:23:35.835Z"
 }
