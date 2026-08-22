@@ -81,7 +81,18 @@
       "operationalPhase": "COMPLETE",
       "createdAt": "2026-08-22T16:03:17.000Z",
       "updatedAt": "2026-08-22T16:04:00.000Z"
+    },
+    {
+      "id": "task-1787414793180",
+      "projectId": "bnOpXbmW0eQww79zKAOu",
+      "title": "Polish contact form HTML and CSS",
+      "description": "Rewrite contact form HTML/CSS: 550px centered card, 1.25rem flex gap, specified input/label/button styles, links with 2rem top margin.",
+      "status": "done",
+      "priority": "high",
+      "operationalPhase": "COMPLETE",
+      "createdAt": "2026-08-22T16:06:33.000Z",
+      "updatedAt": "2026-08-22T16:07:00.000Z"
     }
   ],
-  "lastSync": "2026-08-22T16:04:05.820Z"
+  "lastSync": "2026-08-22T16:07:14.108Z"
 }
