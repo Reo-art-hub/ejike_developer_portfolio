@@ -15,8 +15,29 @@
       "description": "",
       "ownerEmail": "okoye.ejike@gmail.com",
       "ownershipStatus": "member"
+    },
+    {
+      "id": "project-1787409274241",
+      "name": "Developer Portfolio",
+      "description": "Ejikeme Okoye developer portfolio site — HTML copy, project cards, and GitHub URL updates.",
+      "developerRole": "owner",
+      "developerEmail": "ejike@agathakakalogical.com",
+      "proposedOwnerEmail": "ejike@agathakakalogical.com",
+      "ownershipStatus": "pending_owner_claim"
     }
   ],
-  "tasks": [],
-  "lastSync": "2026-06-24T10:02:42.828Z"
+  "tasks": [
+    {
+      "id": "task-1787409312311",
+      "projectId": "bnOpXbmW0eQww79zKAOu",
+      "title": "Update portfolio HTML copy, projects, and GitHub URLs",
+      "description": "Update index.html hero bio, freelance experience timeline, selected project cards (Quick Ticket Maker, Interactive Web Application, Backend Utility REST API), remove Agatha Signature, and point all GitHub links to https://github.com/Reo-art-hub.",
+      "status": "done",
+      "priority": "high",
+      "operationalPhase": "COMPLETE",
+      "createdAt": "2026-08-22T14:35:12.000Z",
+      "updatedAt": "2026-08-22T14:40:00.000Z"
+    }
+  ],
+  "lastSync": "2026-08-22T14:37:55.829Z"
 }
