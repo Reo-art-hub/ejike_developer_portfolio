@@ -37,7 +37,18 @@
       "operationalPhase": "COMPLETE",
       "createdAt": "2026-08-22T14:35:12.000Z",
       "updatedAt": "2026-08-22T14:40:00.000Z"
+    },
+    {
+      "id": "task-1787410259514",
+      "projectId": "bnOpXbmW0eQww79zKAOu",
+      "title": "Refine portfolio copy and hero metrics",
+      "description": "Refine index.html hero metrics, About copy, and experience timeline dates for a market-ready portfolio. Keep CSS layout intact.",
+      "status": "done",
+      "priority": "high",
+      "operationalPhase": "COMPLETE",
+      "createdAt": "2026-08-22T14:50:59.000Z",
+      "updatedAt": "2026-08-22T14:51:30.000Z"
     }
   ],
-  "lastSync": "2026-08-22T14:37:55.829Z"
+  "lastSync": "2026-08-22T14:51:35.349Z"
 }
