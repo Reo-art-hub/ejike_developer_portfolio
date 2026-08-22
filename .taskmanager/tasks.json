@@ -114,7 +114,18 @@
       "operationalPhase": "COMPLETE",
       "createdAt": "2026-08-22T16:21:00.000Z",
       "updatedAt": "2026-08-22T16:22:00.000Z"
+    },
+    {
+      "id": "task-1787415900001",
+      "projectId": "bnOpXbmW0eQww79zKAOu",
+      "title": "Replace contact form AJAX handler",
+      "description": "Use the provided fetch handler: form.action POST, Message Sent with green button for 4s, and form-status success/error copy.",
+      "status": "done",
+      "priority": "medium",
+      "operationalPhase": "COMPLETE",
+      "createdAt": "2026-08-22T16:24:00.000Z",
+      "updatedAt": "2026-08-22T16:25:00.000Z"
     }
   ],
-  "lastSync": "2026-08-22T16:22:32.801Z"
+  "lastSync": "2026-08-22T16:25:48.028Z"
 }

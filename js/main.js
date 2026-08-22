@@ -93,74 +93,50 @@
   }
 
   const contactForm = document.querySelector(".contact-form");
+  const submitBtn = contactForm ? contactForm.querySelector('button[type="submit"]') : null;
+  const statusMsg = document.getElementById("form-status") || document.querySelector(".form-status");
+
   if (contactForm) {
-    const submitBtn = contactForm.querySelector(".contact-form-submit");
-    const statusEl = document.querySelector(".contact-form-status");
-    const defaultBtnText = "Send Message";
-    let resetTimer;
-
-    function restoreSubmitButton() {
-      if (!submitBtn) return;
-      submitBtn.textContent = defaultBtnText;
-      submitBtn.disabled = false;
-      submitBtn.classList.remove("is-sent");
-    }
-
-    contactForm.addEventListener("submit", async (e) => {
+    contactForm.addEventListener("submit", async function (e) {
       e.preventDefault();
       if (!submitBtn) return;
 
-      if (resetTimer) {
-        clearTimeout(resetTimer);
-        resetTimer = undefined;
-      }
-
-      submitBtn.textContent = "Sending...";
+      const originalBtnText = submitBtn.innerText;
+      submitBtn.innerText = "Sending...";
       submitBtn.disabled = true;
-      submitBtn.classList.remove("is-sent");
-
-      if (statusEl) {
-        statusEl.hidden = true;
-        statusEl.textContent = "";
-        statusEl.classList.remove("is-success", "is-error");
-      }
 
       try {
-        const data = new FormData(contactForm);
-        const res = await fetch("https://formspree.io/f/xbgrbqjp", {
+        const response = await fetch(contactForm.action, {
           method: "POST",
-          body: data,
+          body: new FormData(contactForm),
           headers: { Accept: "application/json" },
         });
 
-        if (!res.ok) {
-          throw new Error("Request failed");
+        if (response.ok) {
+          contactForm.reset();
+          submitBtn.innerText = "Message Sent! ✓";
+          submitBtn.style.backgroundColor = "#22c55e";
+          if (statusMsg) {
+            statusMsg.innerText = "Thank you! Your message has been sent successfully.";
+            statusMsg.style.color = "#22c55e";
+            statusMsg.style.display = "block";
+          }
+          setTimeout(() => {
+            submitBtn.innerText = originalBtnText;
+            submitBtn.disabled = false;
+            submitBtn.style.backgroundColor = "";
+          }, 4000);
+        } else {
+          throw new Error("Form response not OK");
         }
-
-        contactForm.reset();
-        contactForm.hidden = false;
-        submitBtn.textContent = "Message Sent! ✓";
-        submitBtn.disabled = true;
-        submitBtn.classList.add("is-sent");
-
-        if (statusEl) {
-          statusEl.textContent = "Thank you! Your message has been sent successfully.";
-          statusEl.classList.add("is-success");
-          statusEl.hidden = false;
-        }
-
-        resetTimer = setTimeout(() => {
-          restoreSubmitButton();
-          resetTimer = undefined;
-        }, 4000);
       } catch (err) {
-        restoreSubmitButton();
-
-        if (statusEl) {
-          statusEl.textContent =
-            "Oops! There was a problem sending your message. Please try again or email okoye.ejike@gmail.com directly.";
-          statusEl.classList.add("is-error");
-          statusEl.hidden = false;
+        submitBtn.innerText = originalBtnText;
+        submitBtn.disabled = false;
+        if (statusMsg) {
+          statusMsg.innerText =
+            "Oops! Something went wrong. Please email okoye.ejike@gmail.com directly.";
+          statusMsg.style.color = "#ef4444";
+          statusMsg.style.display = "block";
         }
       }
     });
