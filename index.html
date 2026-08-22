@@ -246,6 +246,38 @@
         <p class="section-label">Contact</p>
         <h2>Have a project in mind?</h2>
         <p>I'm always open to discussing new opportunities and creative ideas.</p>
+        <form class="contact-form" action="https://formspree.io/f/xbgrbqjp" method="POST">
+          <label class="contact-form-field" for="contact-name">
+            Full Name
+            <input
+              id="contact-name"
+              type="text"
+              name="name"
+              autocomplete="name"
+              required
+            >
+          </label>
+          <label class="contact-form-field" for="contact-email">
+            Email
+            <input
+              id="contact-email"
+              type="email"
+              name="email"
+              autocomplete="email"
+              required
+            >
+          </label>
+          <label class="contact-form-field" for="contact-message">
+            Message
+            <textarea
+              id="contact-message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
         <a href="mailto:okoye.ejike@gmail.com" class="contact-email">okoye.ejike@gmail.com</a>
         <a
           href="https://github.com/Reo-art-hub"

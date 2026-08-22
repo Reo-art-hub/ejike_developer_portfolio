@@ -59,7 +59,18 @@
       "operationalPhase": "COMPLETE",
       "createdAt": "2026-08-22T15:23:20.000Z",
       "updatedAt": "2026-08-22T15:23:30.000Z"
+    },
+    {
+      "id": "task-1787413639259",
+      "projectId": "bnOpXbmW0eQww79zKAOu",
+      "title": "Wire contact form to Formspree",
+      "description": "Add a Formspree contact form to index.html with name, email, and message fields. Keep existing contact layout and CSS classes intact.",
+      "status": "done",
+      "priority": "high",
+      "operationalPhase": "COMPLETE",
+      "createdAt": "2026-08-22T15:47:19.000Z",
+      "updatedAt": "2026-08-22T15:48:00.000Z"
     }
   ],
-  "lastSync": "2026-08-22T15:23:35.835Z"
+  "lastSync": "2026-08-22T15:47:59.573Z"
 }
