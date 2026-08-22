@@ -20,7 +20,7 @@
 
 ---
 
-### 🛠️ Core Tech Stack
+### Core Tech Stack
 - **Languages:** JavaScript (ES6+), Dart, HTML5, CSS3, SQL
 - **Frameworks & Backend:** Flutter, Node.js, Express.js, Firebase
 - **Developer Tools:** Git, GitHub, Cursor IDE, Figma, Postman, AWS
