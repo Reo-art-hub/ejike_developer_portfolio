@@ -670,6 +670,27 @@ ul {
   margin-top: 2rem;
 }
 
+.contact-section .contact-form-status {
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.contact-form-status.is-success {
+  color: #86efac;
+}
+
+.contact-form-status.is-error {
+  color: #fca5a5;
+}
+
+.contact-form .contact-form-submit:disabled {
+  opacity: 0.75;
+  cursor: wait;
+  transform: none;
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);

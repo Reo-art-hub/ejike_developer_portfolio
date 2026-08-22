@@ -92,7 +92,18 @@
       "operationalPhase": "COMPLETE",
       "createdAt": "2026-08-22T16:06:33.000Z",
       "updatedAt": "2026-08-22T16:07:00.000Z"
+    },
+    {
+      "id": "task-1787415296839",
+      "projectId": "bnOpXbmW0eQww79zKAOu",
+      "title": "Add AJAX Formspree contact submission",
+      "description": "Convert the Formspree contact form to async fetch with Sending state, success thank-you message, and error fallback. Keep existing layout CSS intact.",
+      "status": "done",
+      "priority": "high",
+      "operationalPhase": "COMPLETE",
+      "createdAt": "2026-08-22T16:14:56.000Z",
+      "updatedAt": "2026-08-22T16:16:00.000Z"
     }
   ],
-  "lastSync": "2026-08-22T16:07:14.108Z"
+  "lastSync": "2026-08-22T16:15:41.293Z"
 }

@@ -91,4 +91,57 @@
   } else {
     fadeEls.forEach((el) => el.classList.add("visible"));
   }
+
+  const contactForm = document.querySelector(".contact-form");
+  if (contactForm) {
+    const submitBtn = contactForm.querySelector(".contact-form-submit");
+    const statusEl = document.querySelector(".contact-form-status");
+    const defaultBtnText = submitBtn ? submitBtn.textContent.trim() : "Send Message";
+
+    contactForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!submitBtn) return;
+
+      submitBtn.textContent = "Sending...";
+      submitBtn.disabled = true;
+
+      if (statusEl) {
+        statusEl.hidden = true;
+        statusEl.textContent = "";
+        statusEl.classList.remove("is-success", "is-error");
+      }
+
+      try {
+        const data = new FormData(contactForm);
+        const res = await fetch("https://formspree.io/f/xbgrbqjp", {
+          method: "POST",
+          body: data,
+          headers: { Accept: "application/json" },
+        });
+
+        if (!res.ok) {
+          throw new Error("Request failed");
+        }
+
+        contactForm.reset();
+        contactForm.hidden = true;
+
+        if (statusEl) {
+          statusEl.textContent = "Thank you! Your message has been sent successfully.";
+          statusEl.classList.add("is-success");
+          statusEl.hidden = false;
+        }
+      } catch (err) {
+        if (statusEl) {
+          statusEl.textContent =
+            "Something went wrong. Please try again or email me directly at okoye.ejike@gmail.com.";
+          statusEl.classList.add("is-error");
+          statusEl.hidden = false;
+        }
+
+        submitBtn.textContent = defaultBtnText;
+        submitBtn.disabled = false;
+      }
+    });
+  }
 })();
