@@ -103,7 +103,18 @@
       "operationalPhase": "COMPLETE",
       "createdAt": "2026-08-22T16:14:56.000Z",
       "updatedAt": "2026-08-22T16:16:00.000Z"
+    },
+    {
+      "id": "task-1787415296840",
+      "projectId": "bnOpXbmW0eQww79zKAOu",
+      "title": "Refine contact form success and error UI",
+      "description": "On Formspree success: reset fields, show Message Sent and green button for 4s, then restore Send Message. On error, restore the button and show the specified red notice.",
+      "status": "done",
+      "priority": "medium",
+      "operationalPhase": "COMPLETE",
+      "createdAt": "2026-08-22T16:21:00.000Z",
+      "updatedAt": "2026-08-22T16:22:00.000Z"
     }
   ],
-  "lastSync": "2026-08-22T16:15:41.293Z"
+  "lastSync": "2026-08-22T16:22:32.801Z"
 }

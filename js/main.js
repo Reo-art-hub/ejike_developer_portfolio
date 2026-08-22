@@ -96,14 +96,28 @@
   if (contactForm) {
     const submitBtn = contactForm.querySelector(".contact-form-submit");
     const statusEl = document.querySelector(".contact-form-status");
-    const defaultBtnText = submitBtn ? submitBtn.textContent.trim() : "Send Message";
+    const defaultBtnText = "Send Message";
+    let resetTimer;
+
+    function restoreSubmitButton() {
+      if (!submitBtn) return;
+      submitBtn.textContent = defaultBtnText;
+      submitBtn.disabled = false;
+      submitBtn.classList.remove("is-sent");
+    }
 
     contactForm.addEventListener("submit", async (e) => {
       e.preventDefault();
       if (!submitBtn) return;
 
+      if (resetTimer) {
+        clearTimeout(resetTimer);
+        resetTimer = undefined;
+      }
+
       submitBtn.textContent = "Sending...";
       submitBtn.disabled = true;
+      submitBtn.classList.remove("is-sent");
 
       if (statusEl) {
         statusEl.hidden = true;
@@ -124,23 +138,30 @@
         }
 
         contactForm.reset();
-        contactForm.hidden = true;
+        contactForm.hidden = false;
+        submitBtn.textContent = "Message Sent! ✓";
+        submitBtn.disabled = true;
+        submitBtn.classList.add("is-sent");
 
         if (statusEl) {
           statusEl.textContent = "Thank you! Your message has been sent successfully.";
           statusEl.classList.add("is-success");
           statusEl.hidden = false;
         }
+
+        resetTimer = setTimeout(() => {
+          restoreSubmitButton();
+          resetTimer = undefined;
+        }, 4000);
       } catch (err) {
+        restoreSubmitButton();
+
         if (statusEl) {
           statusEl.textContent =
-            "Something went wrong. Please try again or email me directly at okoye.ejike@gmail.com.";
+            "Oops! There was a problem sending your message. Please try again or email okoye.ejike@gmail.com directly.";
           statusEl.classList.add("is-error");
           statusEl.hidden = false;
         }
-
-        submitBtn.textContent = defaultBtnText;
-        submitBtn.disabled = false;
       }
     });
   }

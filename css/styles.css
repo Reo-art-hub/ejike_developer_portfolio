@@ -691,6 +691,14 @@ ul {
   transform: none;
 }
 
+.contact-form .contact-form-submit.is-sent,
+.contact-form .contact-form-submit.is-sent:hover {
+  background: #16a34a;
+  opacity: 1;
+  cursor: default;
+  transform: none;
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
