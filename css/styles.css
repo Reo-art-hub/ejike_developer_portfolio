@@ -553,6 +553,119 @@ ul {
   font-size: 0.85rem;
 }
 
+.flagship-case-study {
+  background: #18181b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.flagship-case-study:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.flagship-case-study .flagship-eyebrow {
+  margin: 0;
+  flex: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.flagship-case-study h3 {
+  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+  line-height: 1.3;
+  max-width: 38ch;
+}
+
+.flagship-badges {
+  gap: 0.5rem;
+}
+
+.flagship-badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+}
+
+.flagship-case-study .flagship-summary {
+  max-width: 68ch;
+  flex: 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.flagship-heading {
+  margin: 0.5rem 0 0;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.flagship-milestones {
+  list-style: disc;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.flagship-milestones li {
+  padding-left: 0.25rem;
+}
+
+.flagship-milestones strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.flagship-results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.flagship-metric {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.flagship-metric-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.flagship-metric-value {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.flagship-metric-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
 /* Contact */
 .contact-section {
   text-align: center;
@@ -777,6 +890,12 @@ ul {
   transform: translateY(0);
 }
 
+@media (max-width: 900px) {
+  .flagship-results {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-desktop {
@@ -807,6 +926,14 @@ ul {
 
   .stat-item strong {
     font-size: 1.5rem;
+  }
+
+  .flagship-case-study {
+    padding: 1.5rem;
+  }
+
+  .flagship-results {
+    grid-template-columns: 1fr;
   }
 }
 

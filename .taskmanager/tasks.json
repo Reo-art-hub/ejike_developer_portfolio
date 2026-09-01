@@ -125,7 +125,19 @@
       "operationalPhase": "COMPLETE",
       "createdAt": "2026-08-22T16:24:00.000Z",
       "updatedAt": "2026-08-22T16:25:00.000Z"
+    },
+    {
+      "id": "task-1788264125194",
+      "projectId": "bnOpXbmW0eQww79zKAOu",
+      "title": "Add AGATHA flagship case study to Featured Projects",
+      "description": "Add AGATHAKAKALOGICAL Enterprise Brand Architecture & Automation Engine as a flagship case study at the top of the Featured Projects section in index.html, with badges, executive summary, milestones, results metrics, and View Repository CTA.",
+      "status": "done",
+      "priority": "high",
+      "operationalPhase": "COMPLETE",
+      "acceptanceCriteria": "Flagship case study appears first in Featured Projects with specified copy, metrics, badges, and GitHub CTA.\nDark slate styling with rgba badge/table surfaces.\nMobile-responsive stacking of metrics and layout.",
+      "createdAt": "2026-09-01T12:02:05.000Z",
+      "updatedAt": "2026-09-01T12:04:29.000Z"
     }
   ],
-  "lastSync": "2026-08-22T16:25:48.028Z"
+  "lastSync": "2026-09-01T12:05:55.558Z"
 }
