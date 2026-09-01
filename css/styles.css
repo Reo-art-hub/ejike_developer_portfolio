@@ -558,7 +558,7 @@ ul {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3.5rem;
   gap: 1rem;
 }
 
@@ -642,28 +642,24 @@ ul {
   padding: 1rem 1.1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
-}
-
-.flagship-metric-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
+  gap: 0.45rem;
 }
 
 .flagship-metric-value {
+  display: block;
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.4;
   color: var(--text);
 }
 
 .flagship-metric-note {
+  display: block;
   font-size: 0.8rem;
-  color: var(--text-muted);
-  line-height: 1.4;
+  line-height: 1.45;
+  color: var(--text);
+  opacity: 0.55;
 }
 
 /* Contact */
@@ -893,6 +889,12 @@ ul {
 @media (max-width: 900px) {
   .flagship-results {
     grid-template-columns: 1fr;
+    row-gap: 0.75rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
   }
 }
 
@@ -928,12 +930,23 @@ ul {
     font-size: 1.5rem;
   }
 
+  .hero-eyebrow {
+    letter-spacing: 0.14em;
+  }
+
   .flagship-case-study {
     padding: 1.5rem;
+    margin-bottom: 3.5rem;
   }
 
   .flagship-results {
     grid-template-columns: 1fr;
+    row-gap: 0.75rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
   }
 }
 
